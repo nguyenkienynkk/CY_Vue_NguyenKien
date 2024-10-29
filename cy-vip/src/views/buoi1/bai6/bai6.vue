@@ -5,9 +5,9 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, reactive } from 'vue'
 
-const product = ref([
+const product = reactive([
   {
     id: 1,
     name: 'Product 1',
@@ -28,7 +28,8 @@ const product = ref([
   },
 ])
 const totalProduct = computed(() => {
-  return product.value.reduce((acc, cur) => acc + cur.price * cur.quantity, 0)
+  debugger
+  return product.reduce((acc, cur) => acc + cur.price * cur.quantity, 0)
 })
 </script>
 <style scoped>
