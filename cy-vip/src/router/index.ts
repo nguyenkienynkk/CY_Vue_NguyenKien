@@ -12,6 +12,7 @@ import Bai3buoi2 from '@/views/buoi2/bai3buoi2.vue'
 import Bai4buoi2 from '@/views/buoi2/bai4buoi2.vue'
 import Bai5buoi2 from '@/views/buoi2/bai5buoi2.vue'
 import Todo_app from '@/views/todo/todo_app.vue'
+import Mini_project from '@/views/buoi3/mini_project.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -80,6 +81,11 @@ const router = createRouter({
       path: '/todo_app',
       name: 'todo_app',
       component: Todo_app,
+    },
+    {
+      path: '/Bai-1-Buoi-3',
+      name: 'Bai-1-Buoi-3',
+      component: Mini_project,
     },
   ],
 })
